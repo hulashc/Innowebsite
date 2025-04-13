@@ -3,14 +3,14 @@ import { Link } from 'wouter';
 export default function Footer() {
   const footerLinks = {
     services: [
-      { name: "Cloud Infrastructure", href: "#" },
-      { name: "Managed Databases", href: "#" },
-      { name: "Security & Compliance", href: "#" },
-      { name: "DevOps Acceleration", href: "#" },
-      { name: "Analytics & AI", href: "#" }
+      { name: "Cloud Infrastructure", href: "/#services" },
+      { name: "Managed Databases", href: "/#services" },
+      { name: "Security & Compliance", href: "/#services" },
+      { name: "DevOps Acceleration", href: "/#services" },
+      { name: "Analytics & AI", href: "/#services" }
     ],
     company: [
-      { name: "About Us", href: "#" },
+      { name: "About Us", href: "/#about" },
       { name: "Careers", href: "#" },
       { name: "Blog", href: "#" },
       { name: "Press", href: "#" },
@@ -21,7 +21,7 @@ export default function Footer() {
       { name: "API Reference", href: "#" },
       { name: "Status Page", href: "#" },
       { name: "Pricing", href: "#" },
-      { name: "Contact Support", href: "#" }
+      { name: "Contact Support", href: "/#contact" }
     ]
   };
 
@@ -33,8 +33,8 @@ export default function Footer() {
   ];
 
   const legalLinks = [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms-of-service" },
     { name: "Cookie Policy", href: "#" }
   ];
 
@@ -105,9 +105,15 @@ export default function Footer() {
           </p>
           <div className="flex space-x-6 text-sm text-gray-500">
             {legalLinks.map((link, index) => (
-              <a key={index} href={link.href} className="hover:text-gray-300 transition-colors">
-                {link.name}
-              </a>
+              link.href.startsWith("/") ? (
+                <Link key={index} href={link.href} className="hover:text-gray-300 transition-colors">
+                  {link.name}
+                </Link>
+              ) : (
+                <a key={index} href={link.href} className="hover:text-gray-300 transition-colors">
+                  {link.name}
+                </a>
+              )
             ))}
           </div>
         </div>
