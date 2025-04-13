@@ -308,95 +308,97 @@ export default function Services() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 fade-in" style={{transitionDelay: '100ms'}}>
-              {/* Category Tabs - Vertical on desktop, horizontal scroll on mobile */}
-              <div className="lg:col-span-1 order-2 lg:order-1">
-                <div className="bg-[#111827] rounded-xl border border-gray-800 p-4 sticky top-24">
-                  <Tabs defaultValue={activeCategory} orientation="vertical" className="w-full" onValueChange={setActiveCategory}>
-                    <h3 className="text-xl font-semibold mb-4 px-1">Categories</h3>
-                    <TabsList className="flex flex-col space-y-2 h-auto bg-transparent">
-                      {serviceCategories.map((category) => (
-                        <TabsTrigger 
-                          key={category.id} 
-                          value={category.id}
-                          className="justify-start w-full px-4 py-3 text-left border border-transparent data-[state=active]:border-[#00f0ff]/30 data-[state=active]:bg-[#00f0ff]/5 hover:bg-[#00f0ff]/5 transition-colors duration-200"
-                        >
-                          {category.name}
-                        </TabsTrigger>
-                      ))}
-                    </TabsList>
-                  </Tabs>
-                  
-                  <div className="mt-6 p-4 bg-[#0f172a] rounded-lg border border-gray-800">
-                    <h4 className="text-sm font-semibold text-gray-300 mb-2">Need help choosing?</h4>
-                    <p className="text-sm text-gray-400 mb-3">
-                      Our cloud experts can guide you through our services and help you find the perfect solution.
-                    </p>
-                    <Button className="w-full bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
-                      Contact Sales
-                    </Button>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Products Content */}
-              <div className="lg:col-span-3 order-1 lg:order-2">
-                {serviceCategories.map((category) => (
-                  <TabsContent key={category.id} value={category.id} className="mt-0">
-                    <div className="mb-8">
-                      <h2 className="text-3xl font-bold mb-3">{category.name}</h2>
-                      <p className="text-gray-300 mb-8">{category.description}</p>
-                      
-                      <div className="grid grid-cols-1 gap-6">
-                        {category.products.map((product) => (
-                          <div 
-                            key={product.id}
-                            className="bg-[#111827] rounded-xl border border-gray-800 overflow-hidden hover:border-[#00f0ff]/30 transition-all duration-300 hover:shadow-lg hover:shadow-[#00f0ff]/10"
+            <div className="fade-in" style={{transitionDelay: '100ms'}}>
+              <Tabs defaultValue={activeCategory} className="w-full" onValueChange={setActiveCategory}>
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                  {/* Category Tabs - Vertical on desktop, horizontal scroll on mobile */}
+                  <div className="lg:col-span-1 order-2 lg:order-1">
+                    <div className="bg-[#111827] rounded-xl border border-gray-800 p-4 sticky top-24">
+                      <h3 className="text-xl font-semibold mb-4 px-1">Categories</h3>
+                      <TabsList className="flex flex-col space-y-2 h-auto bg-transparent">
+                        {serviceCategories.map((category) => (
+                          <TabsTrigger 
+                            key={category.id} 
+                            value={category.id}
+                            className="justify-start w-full px-4 py-3 text-left border border-transparent data-[state=active]:border-[#00f0ff]/30 data-[state=active]:bg-[#00f0ff]/5 hover:bg-[#00f0ff]/5 transition-colors duration-200"
                           >
-                            <div className="p-6">
-                              <div className="flex justify-between items-start mb-4">
-                                <div>
-                                  <h3 className="text-xl font-bold mb-1 flex items-center">
-                                    {product.name}
-                                    {product.popular && (
-                                      <Badge className="ml-3 bg-[#00f0ff]/20 text-[#00f0ff] hover:bg-[#00f0ff]/30">
-                                        Popular
-                                      </Badge>
-                                    )}
-                                  </h3>
-                                  <p className="text-gray-300">{product.description}</p>
-                                </div>
-                                <span className="text-[#00f0ff] font-semibold whitespace-nowrap">{product.price}</span>
-                              </div>
-                              
-                              <div className="mt-6">
-                                <h4 className="text-sm font-semibold mb-3 text-gray-200">Features</h4>
-                                <ul className="space-y-2">
-                                  {product.features.map((feature, index) => (
-                                    <li key={index} className="flex items-start space-x-2 text-gray-300">
-                                      <span className="text-[#00f0ff] mt-1"><i className="fas fa-check-circle"></i></span>
-                                      <span>{feature}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              
-                              <div className="mt-6 flex flex-col sm:flex-row sm:justify-between gap-4">
-                                <Button variant="outline" className="border-[#00f0ff] text-[#00f0ff] hover:bg-[#00f0ff]/10">
-                                  Learn More
-                                </Button>
-                                <Button className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
-                                  Get Started
-                                </Button>
-                              </div>
-                            </div>
-                          </div>
+                            {category.name}
+                          </TabsTrigger>
                         ))}
+                      </TabsList>
+                      
+                      <div className="mt-6 p-4 bg-[#0f172a] rounded-lg border border-gray-800">
+                        <h4 className="text-sm font-semibold text-gray-300 mb-2">Need help choosing?</h4>
+                        <p className="text-sm text-gray-400 mb-3">
+                          Our cloud experts can guide you through our services and help you find the perfect solution.
+                        </p>
+                        <Button className="w-full bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
+                          Contact Sales
+                        </Button>
                       </div>
                     </div>
-                  </TabsContent>
-                ))}
-              </div>
+                  </div>
+                  
+                  {/* Products Content */}
+                  <div className="lg:col-span-3 order-1 lg:order-2">
+                    {serviceCategories.map((category) => (
+                      <TabsContent key={category.id} value={category.id} className="mt-0">
+                        <div className="mb-8">
+                          <h2 className="text-3xl font-bold mb-3">{category.name}</h2>
+                          <p className="text-gray-300 mb-8">{category.description}</p>
+                          
+                          <div className="grid grid-cols-1 gap-6">
+                            {category.products.map((product) => (
+                              <div 
+                                key={product.id}
+                                className="bg-[#111827] rounded-xl border border-gray-800 overflow-hidden hover:border-[#00f0ff]/30 transition-all duration-300 hover:shadow-lg hover:shadow-[#00f0ff]/10"
+                              >
+                                <div className="p-6">
+                                  <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                      <h3 className="text-xl font-bold mb-1 flex items-center">
+                                        {product.name}
+                                        {product.popular && (
+                                          <Badge className="ml-3 bg-[#00f0ff]/20 text-[#00f0ff] hover:bg-[#00f0ff]/30">
+                                            Popular
+                                          </Badge>
+                                        )}
+                                      </h3>
+                                      <p className="text-gray-300">{product.description}</p>
+                                    </div>
+                                    <span className="text-[#00f0ff] font-semibold whitespace-nowrap">{product.price}</span>
+                                  </div>
+                                  
+                                  <div className="mt-6">
+                                    <h4 className="text-sm font-semibold mb-3 text-gray-200">Features</h4>
+                                    <ul className="space-y-2">
+                                      {product.features.map((feature, index) => (
+                                        <li key={index} className="flex items-start space-x-2 text-gray-300">
+                                          <span className="text-[#00f0ff] mt-1"><i className="fas fa-check-circle"></i></span>
+                                          <span>{feature}</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                  
+                                  <div className="mt-6 flex flex-col sm:flex-row sm:justify-between gap-4">
+                                    <Button variant="outline" className="border-[#00f0ff] text-[#00f0ff] hover:bg-[#00f0ff]/10">
+                                      Learn More
+                                    </Button>
+                                    <Button className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
+                                      Get Started
+                                    </Button>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </TabsContent>
+                    ))}
+                  </div>
+                </div>
+              </Tabs>
             </div>
           </div>
         </div>
