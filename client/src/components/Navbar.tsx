@@ -56,13 +56,12 @@ export default function Navbar() {
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            <a 
-              href="#services" 
+            <Link 
+              href="/services" 
               className="text-gray-300 hover:text-[#00f0ff] transition-colors"
-              onClick={(e) => scrollToSection(e, 'services')}
             >
               Services
-            </a>
+            </Link>
             <a 
               href="#about" 
               className="text-gray-300 hover:text-[#00f0ff] transition-colors"
@@ -90,13 +89,13 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} mt-4 rounded-lg bg-[#0f172a]/80 nav-blur p-4`}>
           <div className="flex flex-col space-y-4">
-            <a 
-              href="#services" 
+            <Link 
+              href="/services" 
               className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2"
-              onClick={(e) => scrollToSection(e, 'services')}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
-            </a>
+            </Link>
             <a 
               href="#about" 
               className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2"

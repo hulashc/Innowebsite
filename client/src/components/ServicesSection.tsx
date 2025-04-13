@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 const services = [
   {
@@ -70,9 +72,9 @@ export default function ServicesSection() {
               </div>
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
               <p className="text-gray-400 mb-4">{service.description}</p>
-              <a href="#" className={`inline-flex items-center ${service.color}`}>
+              <Link href="/services" className={`inline-flex items-center ${service.color}`}>
                 Learn more <i className="fas fa-arrow-right ml-2"></i>
-              </a>
+              </Link>
             </Card>
           ))}
         </div>

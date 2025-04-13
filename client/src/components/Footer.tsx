@@ -3,11 +3,11 @@ import { Link } from 'wouter';
 export default function Footer() {
   const footerLinks = {
     services: [
-      { name: "Cloud Infrastructure", href: "/#services" },
-      { name: "Managed Databases", href: "/#services" },
-      { name: "Security & Compliance", href: "/#services" },
-      { name: "DevOps Acceleration", href: "/#services" },
-      { name: "Analytics & AI", href: "/#services" }
+      { name: "Cloud Infrastructure", href: "/services" },
+      { name: "Managed Databases", href: "/services" },
+      { name: "Security & Compliance", href: "/services" },
+      { name: "DevOps Acceleration", href: "/services" },
+      { name: "Analytics & AI", href: "/services" }
     ],
     company: [
       { name: "About Us", href: "/#about" },
@@ -64,9 +64,9 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="hover:text-[#00f0ff] transition-colors">
+                  <Link href={link.href} className="hover:text-[#00f0ff] transition-colors">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
