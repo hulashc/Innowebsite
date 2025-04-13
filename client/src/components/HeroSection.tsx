@@ -31,14 +31,7 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl text-gray-300 mb-10 fade-in" style={{transitionDelay: '200ms'}}>
             Scalable, secure, and innovative cloud solutions to transform your business
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 fade-in" style={{transitionDelay: '400ms'}}>
-            <a 
-              href="#get-started" 
-              className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all animate-pulse-glow"
-              onClick={(e) => scrollToSection(e, 'get-started')}
-            >
-              Get Started
-            </a>
+          <div className="flex justify-center fade-in" style={{transitionDelay: '400ms'}}>
             <a 
               href="#services" 
               className="border border-[#00f0ff] text-[#00f0ff] px-8 py-3 rounded-full font-semibold hover:bg-[#00f0ff]/10 transition-all"
