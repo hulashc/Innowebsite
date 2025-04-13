@@ -64,6 +64,13 @@ export default function Navbar() {
               Services
             </a>
             <a 
+              href="#about" 
+              className="text-gray-300 hover:text-[#00f0ff] transition-colors"
+              onClick={(e) => scrollToSection(e, 'about')}
+            >
+              About Us
+            </a>
+            <a 
               href="#contact" 
               className="text-gray-300 hover:text-[#00f0ff] transition-colors"
               onClick={(e) => scrollToSection(e, 'contact')}
@@ -89,6 +96,13 @@ export default function Navbar() {
               onClick={(e) => scrollToSection(e, 'services')}
             >
               Services
+            </a>
+            <a 
+              href="#about" 
+              className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2"
+              onClick={(e) => scrollToSection(e, 'about')}
+            >
+              About Us
             </a>
             <a 
               href="#contact" 

@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import FeaturesSection from '@/components/FeaturesSection';
+import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
@@ -39,6 +40,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ServicesSection />
+      <AboutSection />
       <FeaturesSection />
       <ContactSection />
       <CallToAction />
