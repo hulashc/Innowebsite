@@ -44,8 +44,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <i className="fas fa-cloud text-[#00f0ff] text-2xl"></i>
-              <span className="text-xl font-bold">Nebula<span className="text-[#00f0ff]">Cloud</span></span>
+              <i className="fas fa-lightbulb text-[#00f0ff] text-2xl"></i>
+              <span className="text-xl font-bold">Innowise<span className="text-[#00f0ff]">Solutions</span></span>
             </Link>
             <p className="text-gray-400 mb-6">
               Innovative cloud solutions for businesses of all sizes. Secure, scalable, and cost-effective.
@@ -101,7 +101,7 @@ export default function Footer() {
         
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} NebulaCloud. All rights reserved.
+            © {new Date().getFullYear()} Innowise Solutions. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-500">
             {legalLinks.map((link, index) => (

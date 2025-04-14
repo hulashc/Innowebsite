@@ -42,8 +42,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <i className="fas fa-cloud text-[#00f0ff] text-2xl"></i>
-            <span className="text-xl font-bold">Nebula<span className="text-[#00f0ff]">Cloud</span></span>
+            <i className="fas fa-lightbulb text-[#00f0ff] text-2xl"></i>
+            <span className="text-xl font-bold">Innowise<span className="text-[#00f0ff]">Solutions</span></span>
           </Link>
           
           {/* Mobile Menu Button */}

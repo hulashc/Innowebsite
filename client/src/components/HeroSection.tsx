@@ -26,10 +26,10 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 fade-in">
-            Empowering Your <span className="gradient-text">Cloud Journey</span>
+            Driving Your <span className="gradient-text">Digital Transformation</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-10 fade-in" style={{transitionDelay: '200ms'}}>
-            Scalable, secure, and innovative cloud solutions to transform your business
+            Innovative technology solutions that empower businesses to succeed in the digital era
           </p>
           <div className="flex justify-center fade-in" style={{transitionDelay: '400ms'}}>
             <a 
