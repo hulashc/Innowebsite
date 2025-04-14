@@ -5,9 +5,9 @@ export default function CallToAction() {
       
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">Ready to Transform Your Cloud Experience?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">Ready to Transform Your Business with Technology?</h2>
           <p className="text-gray-300 text-lg mb-10 fade-in" style={{transitionDelay: '100ms'}}>
-            Join thousands of businesses that trust NebulaCloud for their mission-critical infrastructure.
+            Join thousands of businesses that trust Innowise Solutions for their innovative technology needs.
           </p>
           
           <div className="bg-[#0f172a]/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 max-w-3xl mx-auto fade-in" style={{transitionDelay: '200ms'}}>

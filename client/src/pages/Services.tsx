@@ -304,7 +304,7 @@ export default function Services() {
             <div className="text-center mb-16 fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our <span className="gradient-text">Services</span></h1>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-                Discover our comprehensive range of cloud solutions designed to accelerate your business growth and digital transformation.
+                Discover our comprehensive range of technology solutions designed to accelerate your business growth and digital transformation.
               </p>
             </div>
             

@@ -7,18 +7,18 @@ export default function AboutSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">About NebulaCloud</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">About Innowise Solutions</h2>
               <p className="text-gray-300 mb-6 fade-in" style={{transitionDelay: '100ms'}}>
-                Founded in 2018, NebulaCloud has been at the forefront of cloud innovation, providing cutting-edge solutions to businesses worldwide. Our mission is to empower organizations of all sizes with scalable, secure, and high-performance cloud infrastructure.
+                Founded in 2018, Innowise Solutions has been at the forefront of technology innovation, providing cutting-edge solutions to businesses worldwide. Our mission is to empower organizations of all sizes with scalable, secure, and innovative technology solutions.
               </p>
               <p className="text-gray-300 mb-6 fade-in" style={{transitionDelay: '200ms'}}>
-                With a team of over 200 cloud experts and engineers, we're dedicated to helping our clients navigate the complexities of digital transformation and unlock new opportunities through technology.
+                With a team of over 200 technology experts and engineers, we're dedicated to helping our clients navigate the complexities of digital transformation and unlock new opportunities through innovative solutions.
               </p>
               
               <div className="grid grid-cols-2 gap-6 fade-in" style={{transitionDelay: '300ms'}}>
                 <div className="bg-[#111827] rounded-lg p-4 border border-gray-800">
                   <div className="text-3xl font-bold mb-2 text-[#00f0ff]">200+</div>
-                  <div className="text-gray-400">Cloud Experts</div>
+                  <div className="text-gray-400">Technology Experts</div>
                 </div>
                 <div className="bg-[#111827] rounded-lg p-4 border border-gray-800">
                   <div className="text-3xl font-bold mb-2 text-[#a855f7]">15+</div>
@@ -47,7 +47,7 @@ export default function AboutSection() {
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Our Vision</h3>
                     <p className="text-gray-400">
-                      To be the leading cloud provider that enables businesses to innovate fearlessly in a digital-first world.
+                      To be the leading technology solutions provider that enables businesses to innovate fearlessly in a digital-first world.
                     </p>
                   </div>
                   
@@ -62,7 +62,7 @@ export default function AboutSection() {
                       <div className="text-[#a855f7]">
                         <i className="fas fa-check-circle"></i>
                       </div>
-                      <p className="text-gray-300">Sustainable and eco-friendly data centers</p>
+                      <p className="text-gray-300">Sustainable and eco-friendly technology solutions</p>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="text-[#00f0ff]">
