@@ -77,7 +77,7 @@ export default function TermsOfService() {
               <section className="fade-in" style={{transitionDelay: '400ms'}}>
                 <h2 className="text-2xl font-semibold mb-4 text-white">4. Intellectual Property</h2>
                 <p className="mb-4">
-                  The service and its original content (excluding content provided by users), features, and functionality are and will remain the exclusive property of NebulaCloud and its licensors.
+                  The service and its original content (excluding content provided by users), features, and functionality are and will remain the exclusive property of Innowise Solutions and its licensors.
                 </p>
                 <p>
                   The service is protected by copyright, trademark, and other laws of both the country and foreign countries.
@@ -110,7 +110,7 @@ export default function TermsOfService() {
                   If you have any questions about these Terms, please contact us at:
                 </p>
                 <ul className="list-disc pl-6 mb-4">
-                  <li>By email: legal@nebulacloud.example</li>
+                  <li>By email: legal@innowisesolutions.example</li>
                   <li>By phone: +1 (555) 123-4567</li>
                 </ul>
               </section>

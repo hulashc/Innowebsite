@@ -36,9 +36,9 @@ export default function FeaturesSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">Why Choose NebulaCloud?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">Why Choose Innowise Solutions?</h2>
               <p className="text-gray-300 mb-8 fade-in" style={{transitionDelay: '100ms'}}>
-                Our cloud platform is built with a focus on performance, security, and scalability to help you innovate faster and stay ahead.
+                Our technology solutions are built with a focus on performance, security, and scalability to help you innovate faster and stay ahead.
               </p>
               
               <div className="space-y-6">
@@ -63,9 +63,9 @@ export default function FeaturesSection() {
                 
                 <div className="absolute w-full h-full flex items-center justify-center">
                   <div className="relative w-4/5 h-4/5">
-                    {/* Central cloud icon */}
+                    {/* Central icon */}
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#00f0ff] text-7xl">
-                      <i className="fas fa-cloud"></i>
+                      <i className="fas fa-lightbulb"></i>
                     </div>
                     
                     {/* Orbiting elements */}

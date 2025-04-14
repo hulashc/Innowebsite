@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
               <section className="fade-in" style={{transitionDelay: '100ms'}}>
                 <h2 className="text-2xl font-semibold mb-4 text-white">1. Introduction</h2>
                 <p className="mb-4">
-                  At NebulaCloud, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
+                  At Innowise Solutions, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.
                 </p>
                 <p>
                   Please read this privacy policy carefully before using our services.
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
               <section className="fade-in" style={{transitionDelay: '300ms'}}>
                 <h2 className="text-2xl font-semibold mb-4 text-white">3. How We Use Your Data</h2>
                 <p className="mb-4">
-                  NebulaCloud uses the collected data for various purposes:
+                  Innowise Solutions uses the collected data for various purposes:
                 </p>
                 <ul className="list-disc pl-6 mb-4">
                   <li>To provide and maintain our service</li>
@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
                   If you have any questions about this Privacy Policy, please contact us:
                 </p>
                 <ul className="list-disc pl-6 mb-4">
-                  <li>By email: privacy@nebulacloud.example</li>
+                  <li>By email: privacy@innowisesolutions.example</li>
                   <li>By phone: +1 (555) 123-4567</li>
                 </ul>
               </section>
