@@ -60,8 +60,8 @@ export default function Services() {
       description: 'High-performance computing and storage solutions for your business needs.',
       products: [
         {
-          id: 'nebula-compute',
-          name: 'Nebula Compute',
+          id: 'innowise-compute',
+          name: 'Innowise Compute',
           description: 'Virtual machines optimized for performance, flexibility, and cost-effectiveness.',
           features: [
             'Instant scaling capabilities',
@@ -74,8 +74,8 @@ export default function Services() {
           popular: true
         },
         {
-          id: 'nebula-kubernetes',
-          name: 'Nebula Kubernetes',
+          id: 'innowise-kubernetes',
+          name: 'Innowise Kubernetes',
           description: 'Fully managed Kubernetes service for container orchestration.',
           features: [
             'Automated scaling and deployment',
@@ -87,15 +87,15 @@ export default function Services() {
           price: 'From $0.10/hour per node',
         },
         {
-          id: 'nebula-serverless',
-          name: 'Nebula Serverless',
+          id: 'innowise-serverless',
+          name: 'Innowise Serverless',
           description: 'Run code without provisioning or managing servers.',
           features: [
             'Pay-per-execution model',
             'Automatic scaling to zero',
             'Support for multiple runtimes',
             'Low-latency triggers',
-            'Integrated with other Nebula services'
+            'Integrated with other Innowise services'
           ],
           price: 'From $0.20 per million executions',
         }
@@ -107,8 +107,8 @@ export default function Services() {
       description: 'Fully managed database services with high availability and security.',
       products: [
         {
-          id: 'nebula-postgres',
-          name: 'Nebula PostgreSQL',
+          id: 'innowise-postgres',
+          name: 'Innowise PostgreSQL',
           description: 'Fully managed PostgreSQL database service with high availability.',
           features: [
             'Automated backups and point-in-time recovery',
@@ -121,8 +121,8 @@ export default function Services() {
           popular: true
         },
         {
-          id: 'nebula-redis',
-          name: 'Nebula Redis',
+          id: 'innowise-redis',
+          name: 'Innowise Redis',
           description: 'Managed in-memory data store and cache service.',
           features: [
             'Sub-millisecond latency',
@@ -134,8 +134,8 @@ export default function Services() {
           price: 'From $12/month',
         },
         {
-          id: 'nebula-mongodb',
-          name: 'Nebula MongoDB',
+          id: 'innowise-mongodb',
+          name: 'Innowise MongoDB',
           description: 'Fully managed MongoDB service for document-based data.',
           features: [
             'Automated sharding',
@@ -154,8 +154,8 @@ export default function Services() {
       description: 'Enterprise-grade security solutions for your cloud infrastructure.',
       products: [
         {
-          id: 'nebula-firewall',
-          name: 'Nebula Cloud Firewall',
+          id: 'innowise-firewall',
+          name: 'Innowise Cloud Firewall',
           description: 'Advanced network security for your cloud resources.',
           features: [
             'DDoS protection',
@@ -168,8 +168,8 @@ export default function Services() {
           popular: true
         },
         {
-          id: 'nebula-identity',
-          name: 'Nebula Identity',
+          id: 'innowise-identity',
+          name: 'Innowise Identity',
           description: 'Comprehensive identity and access management solution.',
           features: [
             'Single sign-on (SSO)',
@@ -181,8 +181,8 @@ export default function Services() {
           price: 'From $5/user/month',
         },
         {
-          id: 'nebula-secrets',
-          name: 'Nebula Secrets Manager',
+          id: 'innowise-secrets',
+          name: 'Innowise Secrets Manager',
           description: 'Secure storage and management for API keys, credentials, and certificates.',
           features: [
             'Centralized secrets storage',
@@ -201,8 +201,8 @@ export default function Services() {
       description: 'Tools and services to streamline your development workflow.',
       products: [
         {
-          id: 'nebula-ci-cd',
-          name: 'Nebula CI/CD',
+          id: 'innowise-ci-cd',
+          name: 'Innowise CI/CD',
           description: 'Continuous integration and deployment platform for automated testing and delivery.',
           features: [
             'Parallel test execution',
@@ -215,8 +215,8 @@ export default function Services() {
           popular: true
         },
         {
-          id: 'nebula-monitoring',
-          name: 'Nebula Monitoring',
+          id: 'innowise-monitoring',
+          name: 'Innowise Monitoring',
           description: 'Comprehensive monitoring and observability solution.',
           features: [
             'Custom dashboards',
@@ -228,8 +228,8 @@ export default function Services() {
           price: 'From $18/month',
         },
         {
-          id: 'nebula-iaas',
-          name: 'Nebula Infrastructure as Code',
+          id: 'innowise-iaas',
+          name: 'Innowise Infrastructure as Code',
           description: 'Manage infrastructure using code for consistent deployment.',
           features: [
             'Version-controlled infrastructure',
@@ -248,8 +248,8 @@ export default function Services() {
       description: 'Data analytics and artificial intelligence solutions to derive insights from your data.',
       products: [
         {
-          id: 'nebula-data-warehouse',
-          name: 'Nebula Data Warehouse',
+          id: 'innowise-data-warehouse',
+          name: 'Innowise Data Warehouse',
           description: 'Scalable data warehouse for analytics and business intelligence.',
           features: [
             'Petabyte-scale storage',
@@ -262,8 +262,8 @@ export default function Services() {
           popular: true
         },
         {
-          id: 'nebula-ml',
-          name: 'Nebula Machine Learning',
+          id: 'innowise-ml',
+          name: 'Innowise Machine Learning',
           description: 'Ready-to-use machine learning models and custom ML platform.',
           features: [
             'Pre-trained models',
@@ -275,8 +275,8 @@ export default function Services() {
           price: 'From $0.50/compute hour',
         },
         {
-          id: 'nebula-stream',
-          name: 'Nebula Stream Processing',
+          id: 'innowise-stream',
+          name: 'Innowise Stream Processing',
           description: 'Real-time data processing for analytics and event-driven applications.',
           features: [
             'Low-latency processing',
@@ -330,7 +330,7 @@ export default function Services() {
                       <div className="mt-6 p-4 bg-[#0f172a] rounded-lg border border-gray-800">
                         <h4 className="text-sm font-semibold text-gray-300 mb-2">Need help choosing?</h4>
                         <p className="text-sm text-gray-400 mb-3">
-                          Our cloud experts can guide you through our services and help you find the perfect solution.
+                          Our technology experts can guide you through our services and help you find the perfect solution.
                         </p>
                         <Button className="w-full bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
                           Contact Sales

@@ -47,7 +47,7 @@ export default function TermsOfService() {
               <section className="fade-in" style={{transitionDelay: '100ms'}}>
                 <h2 className="text-2xl font-semibold mb-4 text-white">1. Introduction</h2>
                 <p className="mb-4">
-                  Welcome to NebulaCloud ("Company", "we", "our", "us")! These Terms of Service ("Terms", "Terms of Service") govern your use of our website and services operated by NebulaCloud.
+                  Welcome to Innowise Solutions ("Company", "we", "our", "us")! These Terms of Service ("Terms", "Terms of Service") govern your use of our website and services operated by Innowise Solutions.
                 </p>
                 <p>
                   Our Privacy Policy also governs your use of our service and explains how we collect, safeguard and disclose information that results from your use of our web pages. Please read it here.
