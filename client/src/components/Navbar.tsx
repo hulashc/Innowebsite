@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
+import logo from "@/assets/logo.png";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,8 +43,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <i className="fas fa-lightbulb text-[#00f0ff] text-2xl"></i>
-            <span className="text-xl font-bold">Innowise<span className="text-[#00f0ff]">Solutions</span></span>
+            <img src={logo} alt="Logo" className="h-10 w-10" />
+            <span className="text-2xl font-bold">Innowise<span className="text-[#00f0ff]">Solutions</span></span>
           </Link>
           
           {/* Mobile Menu Button */}

@@ -29,7 +29,7 @@ export default function HeroSection() {
             Driving Your <span className="gradient-text">Digital Transformation</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-10 fade-in" style={{transitionDelay: '200ms'}}>
-            Innovative technology solutions that empower businesses to succeed in the digital era
+          Specialized cloud solutions that optimize performance, security, and cost for modern enterprises
           </p>
           <div className="flex justify-center fade-in" style={{transitionDelay: '400ms'}}>
             <a 
