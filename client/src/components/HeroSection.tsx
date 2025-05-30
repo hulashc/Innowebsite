@@ -54,7 +54,7 @@ export default function HeroSection() {
           </div>
           <div className="bg-[#0f172a]/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-800">
             <div className="text-3xl font-bold mb-2 gradient-text">500+</div>
-            <div className="text-gray-400">Enterprise Clients</div>
+            <div className="text-gray-400">Enterprise Solutions</div>
           </div>
         </div>
       </div>

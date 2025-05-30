@@ -147,8 +147,7 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium mb-1">Email Us</h4>
-                        <p className="text-gray-400">support@nebulacloud.example</p>
-                        <p className="text-gray-400">sales@nebulacloud.example</p>
+                        <p className="text-gray-400">info@innowisesolutions.com</p>
                       </div>
                     </div>
                     
@@ -158,8 +157,8 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium mb-1">Call Us</h4>
-                        <p className="text-gray-400">+1 (555) 123-4567</p>
-                        <p className="text-gray-400">Mon-Fri, 9AM-6PM EST</p>
+                        <p className="text-gray-400">+44 01162257865</p>
+                        <p className="text-gray-400">Mon-Fri, 9AM-6PM</p>
                       </div>
                     </div>
                     
@@ -169,8 +168,8 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <h4 className="text-lg font-medium mb-1">Our Location</h4>
-                        <p className="text-gray-400">123 Cloud Avenue</p>
-                        <p className="text-gray-400">San Francisco, CA 94105</p>
+                        <p className="text-gray-400">Unit 112, The Dock, 75 Exploration Drive</p>
+                        <p className="text-gray-400">Leicester, UK LE4 5NU</p>
                       </div>
                     </div>
                     
