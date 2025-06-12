@@ -27,7 +27,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: "fab fa-twitter", href: "#" },
-    { icon: "fab fa-linkedin", href: "#" },
+    { icon: "fab fa-linkedin", href: "https://uk.linkedin.com/company/innowise-solutions-ltd" },
     { icon: "fab fa-facebook", href: "#" },
     { icon: "fab fa-github", href: "#" }
   ];

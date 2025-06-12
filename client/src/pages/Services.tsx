@@ -70,7 +70,7 @@ export default function Services() {
             'Ultra-fast SSD storage',
             '99.99% uptime guarantee'
           ],
-          price: 'From $0.015/hour',
+          price: '',
           popular: true
         },
         {
@@ -84,7 +84,7 @@ export default function Services() {
             'Auto-healing capabilities',
             'Enterprise security features'
           ],
-          price: 'From $0.10/hour per node',
+          price: '',
         },
         {
           id: 'innowise-serverless',
@@ -97,7 +97,7 @@ export default function Services() {
             'Low-latency triggers',
             'Integrated with other Innowise services'
           ],
-          price: 'From $0.20 per million executions',
+          price: '',
         }
       ]
     },
@@ -117,7 +117,7 @@ export default function Services() {
             'Automatic version upgrades',
             'Dedicated technical support'
           ],
-          price: 'From $15/month',
+          price: '',
           popular: true
         },
         {
@@ -131,7 +131,7 @@ export default function Services() {
             'Cluster mode support',
             'Data encryption in transit and at rest'
           ],
-          price: 'From $12/month',
+          price: '',
         },
         {
           id: 'innowise-mongodb',
@@ -144,7 +144,7 @@ export default function Services() {
             'Performance optimization',
             'Document validation rules'
           ],
-          price: 'From $20/month',
+          price: '',
         }
       ]
     },
@@ -164,7 +164,7 @@ export default function Services() {
             'Custom rule configurations',
             'Real-time monitoring'
           ],
-          price: 'From $30/month',
+          price: '',
           popular: true
         },
         {
@@ -178,7 +178,7 @@ export default function Services() {
             'Role-based access control',
             'Audit logging'
           ],
-          price: 'From $5/user/month',
+          price: '',
         },
         {
           id: 'innowise-secrets',
@@ -191,7 +191,7 @@ export default function Services() {
             'Version history',
             'Encryption by default'
           ],
-          price: 'From $0.40 per secret/month',
+          price: '',
         }
       ]
     },
@@ -211,7 +211,7 @@ export default function Services() {
             'GitHub, GitLab, and Bitbucket integration',
             'Deployment rollbacks'
           ],
-          price: 'From $25/month',
+          price: '',
           popular: true
         },
         {
@@ -225,7 +225,7 @@ export default function Services() {
             'Log aggregation',
             'Performance analytics'
           ],
-          price: 'From $18/month',
+          price: '',
         },
         {
           id: 'innowise-iaas',
@@ -238,7 +238,7 @@ export default function Services() {
             'Resource dependency management',
             'Support for multiple providers'
           ],
-          price: 'From $0.02/resource/hour',
+          price: '',
         }
       ]
     },
@@ -258,7 +258,7 @@ export default function Services() {
             'Data loading automation',
             'BI tool integration'
           ],
-          price: 'From $0.25/GB/month',
+          price: '',
           popular: true
         },
         {
@@ -272,7 +272,7 @@ export default function Services() {
             'AutoML capabilities',
             'Jupyter notebook integration'
           ],
-          price: 'From $0.50/compute hour',
+          price: '',
         },
         {
           id: 'innowise-stream',
@@ -285,7 +285,7 @@ export default function Services() {
             'Event-time processing',
             'Windowing operations'
           ],
-          price: 'From $0.20/GB processed',
+          price: '',
         }
       ]
     }
