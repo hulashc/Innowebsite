@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'wouter';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
@@ -23,6 +24,8 @@ interface ServiceCategory {
 }
 
 export default function Services() {
+  const [location, setLocation] = useLocation();
+
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
@@ -51,6 +54,12 @@ export default function Services() {
       });
     };
   }, []);
+
+  // Handle navigation to contact section
+  const handleContactSales = () => {
+    // Since we're on services page, navigate to home with contact parameter
+    setLocation('/?scroll=contact');
+  };
 
   // Define service categories and products
   const serviceCategories: ServiceCategory[] = [
@@ -332,7 +341,10 @@ export default function Services() {
                         <p className="text-sm text-gray-400 mb-3">
                           Our technology experts can guide you through our services and help you find the perfect solution.
                         </p>
-                        <Button className="w-full bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
+                        <Button 
+                          onClick={handleContactSales}
+                          className="w-full bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20"
+                        >
                           Contact Sales
                         </Button>
                       </div>
@@ -379,15 +391,6 @@ export default function Services() {
                                         </li>
                                       ))}
                                     </ul>
-                                  </div>
-                                  
-                                  <div className="mt-6 flex flex-col sm:flex-row sm:justify-between gap-4">
-                                    <Button variant="outline" className="border-[#00f0ff] text-[#00f0ff] hover:bg-[#00f0ff]/10">
-                                      Learn More
-                                    </Button>
-                                    <Button className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] text-white hover:shadow-lg hover:shadow-[#00f0ff]/20">
-                                      Get Started
-                                    </Button>
                                   </div>
                                 </div>
                               </div>

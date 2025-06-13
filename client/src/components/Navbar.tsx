@@ -90,7 +90,7 @@ export default function Navbar() {
               Contact Us
             </button>
             <button 
-              onClick={() => handleSectionClick('get-started')}
+              onClick={() => handleSectionClick('contact')}
               className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] px-5 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all animate-pulse-glow"
             >
               Get Started
@@ -121,7 +121,7 @@ export default function Navbar() {
               Contact Us
             </button>
             <button 
-              onClick={() => handleSectionClick('get-started')}
+              onClick={() => handleSectionClick('contact')}
               className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] px-5 py-2 rounded-full font-semibold text-center hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
             >
               Get Started

@@ -55,7 +55,6 @@ export default function Home() {
       <AboutSection />
       <FeaturesSection />
       <ContactSection />
-      <CallToAction />
       <Footer />
     </div>
   );
