@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import logo from "@/assets/logo.png";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [location, setLocation] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +14,7 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Run once on load
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -23,15 +24,25 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: 'smooth'
-      });
-      setIsMobileMenuOpen(false);
+  const handleSectionClick = (sectionId: string) => {
+    setIsMobileMenuOpen(false);
+    
+    // Check if we're currently on the home page
+    if (location === '/') {
+      // We're on home page, just scroll to the section
+      setTimeout(() => {
+        if (sectionId === 'top') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }, 100);
+    } else {
+      // We're on a different page, navigate to home with scroll parameter
+      setLocation(`/?scroll=${sectionId}`);
     }
   };
 
@@ -42,11 +53,14 @@ export default function Navbar() {
       <nav className="py-4 px-4 md:px-8 mx-auto max-w-7xl">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <button
+            onClick={() => handleSectionClick('top')}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
             <img src={logo} alt="Logo" className="h-10 w-10" />
             <span className="text-2xl font-bold">Innowise<span className="text-[#00f0ff]">Solutions</span></span>
-          </Link>
-          
+          </button>
+
           {/* Mobile Menu Button */}
           <button 
             className="lg:hidden text-gray-100"
@@ -54,7 +68,7 @@ export default function Navbar() {
           >
             <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
           </button>
-          
+
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
             <Link 
@@ -63,30 +77,27 @@ export default function Navbar() {
             >
               Services
             </Link>
-            <a 
-              href="#about" 
+            <button 
+              onClick={() => handleSectionClick('about')}
               className="text-gray-300 hover:text-[#00f0ff] transition-colors"
-              onClick={(e) => scrollToSection(e, 'about')}
             >
               About Us
-            </a>
-            <a 
-              href="#contact" 
+            </button>
+            <button 
+              onClick={() => handleSectionClick('contact')}
               className="text-gray-300 hover:text-[#00f0ff] transition-colors"
-              onClick={(e) => scrollToSection(e, 'contact')}
             >
               Contact Us
-            </a>
-            <a 
-              href="#get-started" 
+            </button>
+            <button 
+              onClick={() => handleSectionClick('get-started')}
               className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] px-5 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all animate-pulse-glow"
-              onClick={(e) => scrollToSection(e, 'get-started')}
             >
               Get Started
-            </a>
+            </button>
           </div>
         </div>
-        
+
         {/* Mobile Menu */}
         <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} mt-4 rounded-lg bg-[#0f172a]/80 nav-blur p-4`}>
           <div className="flex flex-col space-y-4">
@@ -97,27 +108,24 @@ export default function Navbar() {
             >
               Services
             </Link>
-            <a 
-              href="#about" 
-              className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2"
-              onClick={(e) => scrollToSection(e, 'about')}
+            <button 
+              onClick={() => handleSectionClick('about')}
+              className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2 text-left"
             >
               About Us
-            </a>
-            <a 
-              href="#contact" 
-              className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2"
-              onClick={(e) => scrollToSection(e, 'contact')}
+            </button>
+            <button 
+              onClick={() => handleSectionClick('contact')}
+              className="text-gray-300 hover:text-[#00f0ff] transition-colors py-2 text-left"
             >
               Contact Us
-            </a>
-            <a 
-              href="#get-started" 
+            </button>
+            <button 
+              onClick={() => handleSectionClick('get-started')}
               className="bg-gradient-to-r from-[#00f0ff] to-[#a855f7] px-5 py-2 rounded-full font-semibold text-center hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
-              onClick={(e) => scrollToSection(e, 'get-started')}
             >
               Get Started
-            </a>
+            </button>
           </div>
         </div>
       </nav>
